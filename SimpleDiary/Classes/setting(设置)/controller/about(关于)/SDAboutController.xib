@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SDAboutController">
+            <connections>
+                <outlet property="view" destination="UPf-gU-7WD" id="rl0-U8-LAc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UPf-gU-7WD">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="萌芽·日记" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23T-X6-itC">
+                    <rect key="frame" x="35" y="74" width="75" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="ELb-bu-k2k"/>
+                        <constraint firstAttribute="width" constant="75" id="nRM-Ms-48m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="see-bT-jjP">
+                    <rect key="frame" x="25" y="116" width="550" height="459"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <mutableString key="text">       该日记本并无删除和修改功能，我们认为过去每一天记录下来的经历都是宝贵而不可磨灭的。
+
+      为了用户体验保持了极度的简洁，只能输入文字，感受纷杂世界中宁静纯粹的美好，如果您认为拍照、图片上传、语音功能是不可获取的话，请联系我们。
+
+      为确保用户的隐私，日记本添加了手势解锁功能，用户设置密码后请牢记密码。
+
+      每个人在成长中都会遇到很多事情，有对未来的期许，有对过去的怀念，生命是充满未知的潘多拉盒子，偶尔会遇到倾盆大雨无处可逃的低落，但也会有如同冬日阳光般温暖的日子，感谢生命中遇到过的所有人和事，让我们从一颗小小的种子破土而出，茁壮成才。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="23T-X6-itC" firstAttribute="leading" secondItem="UPf-gU-7WD" secondAttribute="leading" constant="35" id="78N-Kc-9u4"/>
+                <constraint firstAttribute="trailing" secondItem="see-bT-jjP" secondAttribute="trailing" constant="25" id="OW1-XP-lnc"/>
+                <constraint firstItem="23T-X6-itC" firstAttribute="top" secondItem="UPf-gU-7WD" secondAttribute="top" constant="74" id="OhS-f4-ysK"/>
+                <constraint firstAttribute="bottom" secondItem="see-bT-jjP" secondAttribute="bottom" constant="25" id="Szb-z5-S1h"/>
+                <constraint firstItem="see-bT-jjP" firstAttribute="top" secondItem="23T-X6-itC" secondAttribute="bottom" constant="20" id="kQa-M8-RsP"/>
+                <constraint firstItem="see-bT-jjP" firstAttribute="leading" secondItem="UPf-gU-7WD" secondAttribute="leading" constant="25" id="zbn-zJ-U4K"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

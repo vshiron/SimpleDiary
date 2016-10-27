@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  SimpleDiary
+//
+//  Created by vshiron on 15/12/13.
+//  Copyright © 2015年 Apress. All rights reserved.
+//
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "NSString+Extension.h"
+#import "SDDiaryContentTool.h"
+
+
+#ifdef DEBUG
+#define SDLog(...) NSLog(__VA_ARGS__)
+#else
+#define SDLog(...)
+#endif
+
+// RGB颜色
+#define SDColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+// 随机色
+#define SDRandomColor SDColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256)
+
+#define SDNotificationCenter [NSNotificationCenter defaultCenter]
+#endif
